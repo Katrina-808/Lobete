@@ -6,36 +6,113 @@
     <title>Katrina Lobete Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
- <div id="header">
-    <div class="container">
-        <nav>
-            <img src="forportfoliowebsite/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <h1>Hi there! This is <span>Nikolas </span>, a digital artist.</h1>
-            <p>Katrina Lobete, who goes by the name Nikolas, is an artist from Albay. She loves illustrating digital portraits.</p>
-        </div>
-      </div>  
- </div>
- <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="forportfoliowebsite/" alt="">
+   
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="materials/logo.png" class="logo" alt="Katrina's Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi there! This is <span>Katrina</span>, a digital artist.</h1>
             </div>
-            <div class="about-col-2"></div>
         </div>
     </div>
- </div>
+
+   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="materials/profile.jpg" alt="Katrina's Profile">
+                </div>
+                <div class="about-col-2">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Katrina Lobete, a digital artist from Albay. I love creating detailed portraits that bring characters to life. My journey as an artist has been filled with exploration, creativity, and storytelling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
+    <div id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="materials/digart.png" alt="Digital Art">
+                    <h3>Digital Art</h3>
+                    <p>Custom digital portraits and illustrations tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <video autoplay muted loop width="100%">
+                        <source src="materials/a2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <video autoplay muted loop width="100%">
+                        <source src="materials/animation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <h3>Animation</h3>
+                    <p>Bring your ideas to life with 2D animations and motion graphics.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="materials/bookdesign.jpg" alt="Book Cover Designing">
+                    <h3>Book Cover Designing</h3>
+                    <p>Designing book covers according to your creative ideas and works.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="portfolio" class="container">
+        <h2>My Works</h2>
+        <div class="gallery">
+            <img src="materials/a4.png" alt="Artwork 1">
+            <img src="materials/a10.jpg" alt="Artwork 2">
+            <img src="materials/a5.png" alt="Artwork 3">
+            <img src="materials/a14.png" alt="Artwork 4">
+            <img src="materials/a6.png" alt="Artwork 5">
+            <img src="materials/a1.png" alt="Artwork 6">
+            <img src="materials/a15.png" alt="Artwork 7">
+            <img src="materials/a9.png" alt="Artwork 8">
+        </div>
+    </div>
+    
+
+    
+<div id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xldekbqp" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+
+
+   
+    <footer>
+        <p>&copy; 2024 Katrina Lobete. All rights reserved.</p>
+    </footer>
 </body>
 </html>
